@@ -19,4 +19,6 @@ jobs:
         run: screen -dmS rukkit java -Dfile.encoding=UTF-8 -Djava.library.path=. -cp Rukkit-0.9.4-dev-240811.jar:libs/* cn.rukkit.RukkitLauncher
       - name: Debug Check Screen
         run: screen -list
+      - name: Log Check
+        run: find . -name "*.log" -exec cat {} \;
       
