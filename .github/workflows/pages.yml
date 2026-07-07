@@ -1,0 +1,14 @@
+name: Pages
+
+on:
+  push:
+    branches:
+      - main # default branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run
+        run: start.sh
+      
