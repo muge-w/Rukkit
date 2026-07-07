@@ -6,7 +6,7 @@ on:
       - main # default branch
 
 jobs: 
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -15,9 +15,6 @@ jobs:
           distribution: 'zulu' # See 'Supported distributions' for available options
           java-version: '25'
       - run: java --version
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Run
-      run: start.sh
+      - name: Run
+        run: start.sh
       
