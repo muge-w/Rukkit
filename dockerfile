@@ -11,4 +11,4 @@ COPY Rukkit-0.9.4.jar app.jar
 EXPOSE 5123
 
 # 启动命令
-CMD ["nohup","java", "-Dfile.encoding=UTF-8", "-Djava.library.path=.","-cp","app.jar:libs/*","cn.rukkit.RukkitLauncher"]
+CMD ["java","-Djline.terminal=none","-Dfile.encoding=UTF-8", "-Djava.library.path=.","-cp","app.jar:libs/*","cn.rukkit.RukkitLauncher"]
