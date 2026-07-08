@@ -10,4 +10,4 @@ COPY Rukkit-0.9.4-dev-240811.jar
 EXPOSE 5123
 
 # 启动命令
-CMD ["java", "-Dfile.encoding=UTF-8", "-Djava.library.path=.","-cp Rukkit-{version}.jar:libs/*","cn.rukkit.RukkitLauncher"]
+CMD ["java", "-Dfile.encoding=UTF-8", "-Djava.library.path=.","-cp","Rukkit-{version}.jar:libs/*","cn.rukkit.RukkitLauncher"]
