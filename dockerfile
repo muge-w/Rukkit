@@ -1,5 +1,5 @@
 # 使用轻量级 JDK 镜像（建议版本与编译时一致）
-FROM ibmjava:latest
+FROM sapmachine:17-alpine
 
 # 设置工作目录
 WORKDIR /app
