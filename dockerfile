@@ -6,7 +6,7 @@ WORKDIR /app
 
 # 将本地的 jar 包复制到镜像中（建议重命名为 app.jar 方便管理）
 COPY Rukkit-0.9.4.jar app.jar
-COPY ./lib/* ./app
+COPY /lib/* /app
 
 # 暴露应用端口（根据实际情况修改，比如 8080）
 EXPOSE 5123
