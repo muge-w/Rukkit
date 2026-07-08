@@ -1,5 +1,5 @@
 # 使用轻量级 JDK 镜像（建议版本与编译时一致）
-FROM openjdk:17-jdk-slim
+FROM ibmjava:latest
 
 # 设置工作目录
 WORKDIR /app
