@@ -1,8 +1,4 @@
-FROM sapmachine:17-alpine
-FROM ubuntu:22.04
-RUN apt-get update && apt-get install -y ncurses-term \
-    && echo "export TERM=xterm" >> /root/.bashrc
-ENV TERM xterm
+FROM openjdk:17
 WORKDIR /app
 COPY Rukkit-0.9.4.jar app.jar
 EXPOSE 5123
