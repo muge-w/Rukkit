@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     screen \
     && echo "export TERM=xterm" >> /root/.bashrc \
     && rm -rf /var/lib/apt/lists/*
-RUN screen -S Rukkit
+    && screen -S Rukkit
 WORKDIR /app
 COPY Rukkit-0.9.4.jar app.jar
 EXPOSE 5123
