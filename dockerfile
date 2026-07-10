@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y \
     ncurses-term \
     screen \
     && echo "export TERM=xterm" >> /root/.bashrc \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
     && screen -S Rukkit
 WORKDIR /app
 COPY Rukkit-0.9.4.jar app.jar
