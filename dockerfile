@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM open-17-jdk-jammy
 WORKDIR /app
 COPY Rukkit-0.9.4.jar app.jar
 EXPOSE 5123
