@@ -3,6 +3,7 @@ FROM ubuntu:22.04
 RUN apt-get update && apt-get install -y \
     openjdk-17-jdk \
     ncurses-term \
+    screen \
     && echo "export TERM=xterm" >> /root/.bashrc \
     && rm -rf /var/lib/apt/lists/*
 RUN screen -S Rukkit
